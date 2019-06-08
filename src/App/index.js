@@ -1,13 +1,15 @@
-import React from "react"
-import Routes from "../donor/components/Routes"
+import React, { Fragment } from "react"
+import DonorRoutes from "../donor/components/Routes"
+import RecipientsRoutes from "../recipients/components/Routes"
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 const App = () => {
   return (
     <Router>
-      <Switch>
-        <Route component={Routes} />
-      </Switch>
+      <Fragment>
+        <Route component={RecipientsRoutes} />
+        <Route component={DonorRoutes} />
+      </Fragment>
     </Router>
   )
 }
