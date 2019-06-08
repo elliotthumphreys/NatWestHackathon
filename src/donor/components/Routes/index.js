@@ -1,6 +1,6 @@
 import React from "react"
 import { Route, Switch } from 'react-router-dom';
-import Start from "../Home"
+import Start from "../Start"
 import { Provider } from '../Context'
 
 import "../../sass/main.scss"
