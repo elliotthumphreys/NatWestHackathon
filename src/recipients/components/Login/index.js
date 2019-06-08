@@ -20,7 +20,7 @@ const Login = () => {
                     <Input label='4-Digit PIN' icon={() => <Lock />} value={pin} onChange={setPin}/>
                 </div>
                 <div className="buttons">
-                    <Button label='Sign in' className='white-button-pink-background' link='/login'/>
+                    <Button label='Sign in' className='white-button-pink-background' link={username && pin ? '/admin' : '/login'}/>
                     <Button label='Sign up' className='pink-button-white-background' link='/register'/>
                 </div>
             </section>
