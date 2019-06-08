@@ -1,5 +1,5 @@
 import React, { useState, useContext } from 'react'
-import { Context } from '../Context'
+import { Context } from '../../../Context'
 import Button from '../../../shared-components/Button'
 import Header, { ThinHeader } from '../../../shared-components/Header'
 import InfoBanner from '../InfoBanner';

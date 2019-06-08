@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react'
 import Avatar from '@material-ui/core/Avatar'
-import { Context } from '../Context'
+import { Context } from '../../../Context'
 import Button from '../../../shared-components/Button'
 import InfoBanner from '../InfoBanner';
 import { ThinHeader } from '../../../shared-components/Header';
