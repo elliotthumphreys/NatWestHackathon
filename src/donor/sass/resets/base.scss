@@ -13,6 +13,12 @@
 $body-font: "Open Sans", sans-serif;
 $header-font: "Proza Libre", sans-serif;
 
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 h1, h2, h3 {
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
