@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {Fragment} from 'react'
 import styled from 'styled-components'
 
 const H1 = styled.h1`
@@ -7,7 +7,11 @@ const H1 = styled.h1`
 `
 
 const Start = () => {
-    return <H1>Ryan iz gey</H1>
+    return <Fragment>
+      <H1>Ryan iz gey</H1>
+      <p>Elliot iz also gey</p>
+    </Fragment>
+    
 }
 
 export default Start
