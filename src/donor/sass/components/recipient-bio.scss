@@ -1,0 +1,14 @@
+.recipient-bio {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    height: 100vh;
+    padding: 2rem;
+    padding-top: 0;
+    justify-content: space-between;
+    .bio-section {
+        display: flex;
+        overflow: scroll;
+        height: 40%;
+    }
+}

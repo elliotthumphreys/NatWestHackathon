@@ -2,7 +2,17 @@
 
 }
 
+.background {
+  background: #ff6b6b;
+  color: #222f3e;
+  display: flex;
+  flex-flow: column wrap;
+  height: 100vh;
+  color: white;
+}
+
 .header-info-container {
+  margin-top: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,7 +28,12 @@
   }
 }
 
+.pot-btn {
+  margin: 1rem 0!important;
+}
+
 .pot-container {
+  flex-grow: 1;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -26,20 +41,22 @@
 }
 
 .avatar {
-  
+  width: 15rem!important;
+  height: 15rem!important;
+}
+
+.donate-msg {
+  text-align: center;
 }
 
 .body-container {
+  flex-grow: 1;
   padding: 0 1rem;
   flex-direction: column;
   width: 100%;
 }
 
-.donate-btn-container {
-  display: flex;
-  align-items: center;
-  flex: 1;
-  .donate-btn {
-    width: 100%;
-  }
+.donate-btn {
+  margin-top: 100px!important;
+  width: 100%!important;
 }

@@ -1,18 +1,8 @@
-import React, { useState, useContext } from 'react'
-import styled from 'styled-components'
+import React from 'react'
 import Avatar from '@material-ui/core/Avatar'
+import Button from '../../../shared-components/Button'
 
-const Background = styled.div`
-    background: #ff6b6b;
-    color: #222f3e;
-    display: flex;
-    justify-content: center;
-    flex-flow: column wrap;
-    height: 100vh;
-    color: white;
-`
-
-const Start = () => <div class="">
+const Start = () => <div className="background">
       <div className="header-info-container">
         <Avatar src="./images/homeless-man.jpg" className="avatar"/>
         <div className="sub-heading-container">
@@ -21,11 +11,12 @@ const Start = () => <div class="">
         </div>
       </div>
       <div className="body-container">
+        <p className="donate-msg">Donate to a category</p>
         <div className="pot-container">
-
-        </div>
-        <div class="donate-btn-container">
-          
+          <Button label="Suit" className="button pot-btn"/>
+          <Button label="Food" className="button pot-btn" />
+          <Button label="Shelter" className="button pot-btn" />
+          <Button label="More categories" className="button pot-btn" />
         </div>
       </div>
       
