@@ -29,6 +29,16 @@ a {
   text-decoration: none !important;
 }
 
+.pink-button-white-background {
+  @extend .button;
+  color: #f67979 !important;
+  background-color: white !important;
+  margin: 0 0.5em 1.1em !important;
+  outline: #f67979 !important;
+  outline-color: #f67979 !important;
+  text-decoration: none !important;
+}
+
 .transparent-btn-white-outline {
   @extend .button;
   background: transparent!important;

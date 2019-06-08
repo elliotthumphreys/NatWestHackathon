@@ -10,7 +10,9 @@
     height: 40%;
     display: flex;
     flex-direction: column;
-
+    > h1 {
+      font-size: 5em;
+    }
     > div {
       display: flex;
       align-items: center;
@@ -32,6 +34,7 @@
       flex-direction: column;
       justify-content: center;
       padding: 0 3em;
+      margin: auto;
     }
     > div.sign-in {
       display: flex;
@@ -41,6 +44,11 @@
       flex-grow: 0;
       height: 3em;
       padding: 0 3em;
+    }
+    > div.buttons {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
     }
   }
 }

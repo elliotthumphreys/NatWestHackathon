@@ -13,18 +13,15 @@ const Login = () => {
         <div className="Login">
             <header>
                 <Header/>
-                <div>
-                    <Button label='Sign in' className='white-button-pink-background' link='/login'/>
-                    <Button label='Sign up' className='white-button-pink-background' link='/register'/>
-                </div>
             </header>
             <section>
                 <div className="inputs">
                     <Input label='Username' icon={() => <PermIdentity />} value={username} onChange={setUsername}/>
                     <Input label='4-Digit PIN' icon={() => <Lock />} value={pin} onChange={setPin}/>
                 </div>
-                <div className="sign-in">
-                    <Button label='Sign in' className='grey-button' link='/register'/>
+                <div className="buttons">
+                    <Button label='Sign in' className='white-button-pink-background' link='/login'/>
+                    <Button label='Sign up' className='pink-button-white-background' link='/register'/>
                 </div>
             </section>
         </div>
