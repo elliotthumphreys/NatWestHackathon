@@ -1,0 +1,30 @@
+.recipient-bio {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    height: 100vh;
+    padding: 2rem;
+    .cover-image {
+        border: 3px solid #ccc;
+        border-radius: 999px;
+        height: 5rem;
+        width: 5rem;
+    }
+    .header-info {
+        display: flex;
+    }
+    .donate-btn {
+        display: flex;
+        align-items: flex-end;
+        border-radius: 999px;
+        border: 3px solid #ccc;
+        padding: 2rem;
+        height: fit-content;
+        width: fit-content;
+        background: #fff;
+    }
+    .bio-section {
+        display: flex;
+        flex-grow: 1;
+    }
+}

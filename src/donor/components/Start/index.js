@@ -20,11 +20,11 @@ const CoverImage = styled.img`
 `
 
 const GenericBtn = styled.button`
-    border-radius: 999px;
-    border: 3px solid #ccc;
-    height: 2rem;
-    margin: 1rem;
-    background: #fff;
+border-radius: 999px;
+border: 3px solid #ccc;
+height: 2rem;
+margin: 1rem;
+background: #fff;
 `
 
 const PotContainer = styled.div`

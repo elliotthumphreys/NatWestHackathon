@@ -1,50 +1,21 @@
 import React, { useState, useContext } from 'react'
-import styled from 'styled-components'
+import { Context } from '../Context'
 
-const Background = styled.div`
-    background: #ff6b6b;
-    color: #222f3e;
-    display: flex;
-    justify-content: center;
-    flex-flow: column wrap;
-`
+const RecipientBio = () => {
+    const [ person, setPerson ] = useContext(Context)
 
-const CoverImage = styled.img`
-    border: 3px solid #ccc;
-    border-radius: 999px;
-    height: 5rem;
-    width: 5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-`
-
-const GenericBtn = styled.button`
-    border-radius: 999px;
-    border: 3px solid #ccc;
-    height: 2rem;
-    margin: 1rem;
-    background: #fff;
-`
-
-const PotContainer = styled.div`
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: space-around;
-
-`
-
-const RecipientBio = () => <Background>
-      <CoverImage src='./images/homeless-man.jpg' />
-      <h2>Some guy</h2>
-      <h3>age</h3>
-      <div>
-          <p>
-
-          </p>
-      </div>
-      <GenericBtn className="donate-btn">DONATE</GenericBtn>
-  </Background>
-
+    return <div className='recipient-bio'>
+        <img className='cover-image' src={person.image} />
+        <div className='header-info'>
+            <h3>{person.name}</h3>
+            <h3>{person.age}</h3>
+        </div>
+        <div className='bio-section'>
+            <p>
+                {person.story}
+            </p>
+        </div>
+        <button className="donate-btn">DONATE</button>
+    </div>
+}
 export default RecipientBio

@@ -2,7 +2,7 @@
     "id": "6969",
     "name": "John Smith",
     "age": 87,
-    "image": "/john.jpg",
+    "image": "./images/homeless-man.jpg",
     "story": "I started sleeping rough after my wife left me, miss you sharron",
     "pots": [
         {
