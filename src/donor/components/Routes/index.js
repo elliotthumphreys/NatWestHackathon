@@ -1,19 +1,17 @@
 import React from "react"
 import { Route, Switch } from 'react-router-dom';
 import Start from "../Home"
-import { ContentProvider, HatsProvider } from '../Context'
+import { Provider } from '../Context'
 
 import "../../sass/main.scss"
 
 const Routes = () => {
   return (
-    <ContentProvider>
-      <HatsProvider>
+    <Provider>
         <Switch>
           <Route path="/start" component={Start} />
         </Switch>
-      </HatsProvider>
-    </ContentProvider>
+    </Provider>
   )
 }
 
