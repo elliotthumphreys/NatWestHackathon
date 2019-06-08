@@ -1,0 +1,106 @@
+@import "node_modules/react-image-gallery/styles/scss/image-gallery.scss";
+.product-page {
+  @extend .generic-page;
+  > .body {
+    width: 80%;
+    margin: 2em auto;
+
+    @media #{$mobile, $tablet} {
+      width: 100%;
+      margin: 2em 0;
+    }
+
+    div {
+      padding-top: 0;
+    }
+    .image-container {
+      width: 66%;
+      float: left;
+      padding: 0 1em 1em 0;
+      @media #{$mobile, $tablet} {
+        width: 100%;
+        padding: 0 0 1em;
+      }
+      .image-gallery-thumbnails-container {
+        margin-top: 0.5em;
+        .image-gallery-thumbnail.active {
+          border: 1px solid #636E6D;
+        }
+      }
+      .image-gallery-thumbnail {
+        width: auto;
+      }
+      .image-gallery-thumbnail .image-gallery-thumbnail-inner {
+        width: auto;
+        height: 90px;
+        overflow: hidden;
+      }
+      .image-gallery-thumbnail img {
+        vertical-align: middle;
+        height: 100%;
+        width: auto;
+      }
+      .image-gallery-left-nav,
+      .image-gallery-right-nav {
+        font-size: 3em;
+        &::before{
+          color: #636E6D;
+        }
+      }
+      a.image-gallery-thumbnail {
+        padding-bottom: 0;
+      }
+      .image-gallery-slide.center.galleryImage {
+        text-align: center;
+        background-color: black;
+        img {
+          max-height: 66vh;
+          width: auto;
+        }
+      }
+    }
+
+    .credit {
+      padding-left: 1em;
+    }
+
+    h1,
+    h2,
+    h3 {
+      padding-bottom: 0.1em;
+    }
+
+    ol,
+    ul {
+      display: inline-block;
+      padding-left: 1em;
+    }
+
+    nav {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 0.2em;
+      padding: 1em 1em 0;
+      @media #{$mobile, $tablet} {
+        padding: 1em 0 0;
+      }
+
+      a,
+      span {
+        color: #636E6D;
+        text-decoration: none;
+        padding: 0 0.2em;
+        text-transform: lowercase;
+      }
+      a:hover {
+        color: black;
+        cursor: pointer;
+      }
+      span {
+        margin: 0 0.2em;
+        font-size: 0.6em;
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+$slect-padding: 0em;
+$slect-padding-bottom: 0.1em; 
+$span-color: grey;
+$li-color: lightgrey;
+$li-hover-color: black;
+section.filter {
+    a {
+        span{
+            color: $span-color;
+            cursor: pointer;
+            text-transform: lowercase;
+            &:first-child{
+                position: absolute;
+                display: none;
+            }
+            &:last-child{
+                padding-left: $slect-padding;
+
+                ::before{
+
+                }
+            }
+        }
+    }
+    > ul {
+        list-style: none;
+        overflow: hidden;
+        transition:max-height 0.5s ease-out;
+        max-height: 600px;
+        &.show, &.hide {
+            padding: 0;
+        }
+        &.show{
+            height: auto;
+        }
+        &.hide{
+            max-height: 0px;
+        }
+        li {
+            padding-left: $slect-padding; 
+            cursor: pointer;
+            color: $li-color;
+            text-transform: lowercase;
+            &:last-child{
+                padding-bottom: $slect-padding-bottom;
+            }
+            &:hover{
+                color: $li-hover-color;
+            }
+        }
+    }
+}

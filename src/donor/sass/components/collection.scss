@@ -1,0 +1,15 @@
+.collection {
+  @extend .generic-page;
+
+  > .body > .filter {
+    > ul,
+    > ol {
+      display: block;
+    }
+  }
+
+  > .body {
+    background-color: white;
+    padding: 3em 0.5em;
+  }
+}
