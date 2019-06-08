@@ -2,13 +2,14 @@ import React, { useState, useContext } from 'react'
 import { PermIdentity, Lock } from '@material-ui/icons'
 import Input from '../../../shared-components/Input'
 import Button from '../../../shared-components/Button'
+import Header from '../../../shared-components/Header'
 
 
 const Login = () => {
     return (
         <div className="Login">
             <header>
-                <h1>PotPay<span>&trade;</span></h1>
+                <Header/>
                 <div>
                     <Button label='Sign in' className='white-button-pink-background' link='google.fuck.you'/>
                     <Button label='Sign up' className='white-button-pink-background' link='google.fuck.you'/>
