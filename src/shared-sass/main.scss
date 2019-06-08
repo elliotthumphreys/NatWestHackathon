@@ -1,0 +1,37 @@
+.grey-button {
+  background-color: white !important;
+  color: grey !important;
+  padding: 0.6em 3em 0.6em !important;
+  border: solid 3px grey !important;
+  border-radius: 2em !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  width: 100% !important;
+  margin-bottom: 1em !important;
+  box-shadow: none !important;
+}
+
+.white-button-pink-background {
+  background-color: #f67979 !important;
+  color: white !important;
+  padding: 0.6em 2em 0.6em !important;
+  border: solid 3px white !important;
+  border-radius: 2em !important;
+  margin: 0 0.5em 1.1em !important;
+  text-decoration: none !important;
+  box-shadow: none !important;
+}
+
+h1.header-text {
+  padding-top: 1.5em;
+  display: flex;
+  color: white;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+  > span {
+    font-size: 0.7em;
+    font-weight: 100;
+    margin-top: -15px;
+  }
+}

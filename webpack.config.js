@@ -1,10 +1,9 @@
-const path = require("path");
-const webpack = require("webpack");
-const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
+const path = require("path")
+const webpack = require("webpack")
 
 module.exports = {
   entry: ['babel-polyfill', "./src/index.js"],
-  mode: "production",
+  mode: "development",
   module: {
     rules: [
       {
@@ -44,23 +43,8 @@ module.exports = {
     hotOnly: true,
     historyApiFallback: true
   },
-  optimization: {
-    minimizer: [new UglifyJsPlugin()],
-    namedModules: false,
-    namedChunks: false,
-    nodeEnv: 'production',
-    flagIncludedChunks: true,
-    occurrenceOrder: true,
-    sideEffects: true,
-    usedExports: true,
-    concatenateModules: true,
-    noEmitOnErrors: true,
-    checkWasmTypes: true,
-    minimize: true,
-  },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.optimize.ModuleConcatenationPlugin(),
     new webpack.LoaderOptionsPlugin({options: {
       loaders: [
         { test: /\.json$/, loader: 'json-loader' },
