@@ -105,7 +105,11 @@ const Admin = () => {
                     placeholder='search people...'
                     value={searchTerm}
                     onChange={event => setSearchTerm(event.target.value)} />
-                {persons.filter(_ => _.name.toLowerCase().includes(searchTerm.toLowerCase())).map((person, index) => personTab(person, index))}
+                {persons.filter(_ => 
+                    _.name
+                    .toLowerCase()
+                    .includes(searchTerm.toLowerCase()))
+                    .map((person, index) => personTab(person, index))}
             </Section>
         </Page>
     )
