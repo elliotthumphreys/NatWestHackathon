@@ -35,8 +35,7 @@ const PotContainer = styled.div`
 
 `
 
-const Start = () => {
-    return <Background>
+const Start = () => <Background>
         <CoverImage src='./images/maxresdefault.jpg' />
         <h2>Some guy</h2>
         <h3>age</h3>
@@ -47,6 +46,5 @@ const Start = () => {
         </PotContainer>
         <GenericBtn className="donate-btn">DONATE</GenericBtn>
     </Background>
-}
 
 export default Start
