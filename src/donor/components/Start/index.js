@@ -36,15 +36,15 @@ const PotContainer = styled.div`
 `
 
 const Start = () => <Background>
-        <CoverImage src='./images/maxresdefault.jpg' />
-        <h2>Some guy</h2>
-        <h3>age</h3>
-        <PotContainer>
-            <GenericBtn>Soup</GenericBtn>
-            <GenericBtn>Shelter</GenericBtn>
-            <GenericBtn>Suit</GenericBtn>
-        </PotContainer>
-        <GenericBtn className="donate-btn">DONATE</GenericBtn>
-    </Background>
+      <CoverImage src='./images/homeless-man.jpg' />
+      <h2>Some guy</h2>
+      <h3>age</h3>
+      <PotContainer>
+          <GenericBtn>Soup</GenericBtn>
+          <GenericBtn>Shelter</GenericBtn>
+          <GenericBtn>Suit</GenericBtn>
+      </PotContainer>
+      <GenericBtn className="donate-btn">DONATE</GenericBtn>
+  </Background>
 
 export default Start
