@@ -11,20 +11,6 @@
     display: flex;
     flex-direction: column;
 
-    > h1 {
-      padding-top: 1.5em;
-      display: flex;
-      color: white;
-      flex-grow: 1;
-      align-items: center;
-      justify-content: center;
-      > span {
-          font-size: 0.7em;
-          font-weight: 100;
-          margin-top: -15px;
-      }
-    }
-
     > div {
       display: flex;
       align-items: center;
@@ -32,16 +18,6 @@
       color: white;
       flex-grow: 0;
       height: 3em;
-
-      > a {
-        background-color: $pastel-pink;
-        color: white;
-        padding: 0.6em 2em 0.6em;
-        border: solid 3px white;
-        border-radius: 2em;
-        margin: 0 0.5em 1.1em;
-        text-decoration: none;
-      }
     }
   }
 
@@ -56,14 +32,6 @@
       flex-direction: column;
       justify-content: center;
       padding: 0 3em;
-      > input {
-        outline: none;
-        border: none;
-        padding: 2em 0 1em;
-        border-bottom: solid 3px grey;
-        margin-top: 2em;
-        font-size: 1em;
-      }
     }
     > div.sign-in {
       display: flex;
@@ -72,15 +40,7 @@
       color: white;
       flex-grow: 0;
       height: 3em;
-      > a {
-        background-color: white;
-        color: grey;
-        padding: 0.6em 2em 0.6em;
-        border: solid 3px grey;
-        border-radius: 2em;
-        margin: 0 0.5em 1.1em;
-        text-decoration: none;
-      }
+      padding: 0 3em;
     }
   }
 }
