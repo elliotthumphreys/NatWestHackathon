@@ -1,3 +1,45 @@
 .start {
 
 }
+
+.header-info-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  .sub-heading-container {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .sub-heading {
+      color: #ccc;
+    }
+  }
+}
+
+.pot-container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: space-around;
+}
+
+.avatar {
+  
+}
+
+.body-container {
+  padding: 0 1rem;
+  flex-direction: column;
+  width: 100%;
+}
+
+.donate-btn-container {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  .donate-btn {
+    width: 100%;
+  }
+}

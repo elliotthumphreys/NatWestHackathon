@@ -1,5 +1,6 @@
 import React, { useState, useContext } from 'react'
 import styled from 'styled-components'
+import Avatar from '@material-ui/core/Avatar'
 
 const Background = styled.div`
     background: #ff6b6b;
@@ -7,44 +8,27 @@ const Background = styled.div`
     display: flex;
     justify-content: center;
     flex-flow: column wrap;
+    height: 100vh;
+    color: white;
 `
 
-const CoverImage = styled.img`
-    border: 3px solid #ccc;
-    border-radius: 999px;
-    height: 5rem;
-    width: 5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-`
+const Start = () => <div class="">
+      <div className="header-info-container">
+        <Avatar src="./images/homeless-man.jpg" className="avatar"/>
+        <div className="sub-heading-container">
+          <h2>Bob</h2>
+          <h3 className="sub-heading flex-center">48</h3>
+        </div>
+      </div>
+      <div className="body-container">
+        <div className="pot-container">
 
-const GenericBtn = styled.button`
-    border-radius: 999px;
-    border: 3px solid #ccc;
-    height: 2rem;
-    margin: 1rem;
-    background: #fff;
-`
-
-const PotContainer = styled.div`
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: space-around;
-
-`
-
-const Start = () => <Background>
-      <CoverImage src='./images/homeless-man.jpg' />
-      <h2>Some guy</h2>
-      <h3>age</h3>
-      <PotContainer>
-          <GenericBtn>Soup</GenericBtn>
-          <GenericBtn>Shelter</GenericBtn>
-          <GenericBtn>Suit</GenericBtn>
-      </PotContainer>
-      <GenericBtn className="donate-btn">DONATE</GenericBtn>
-  </Background>
+        </div>
+        <div class="donate-btn-container">
+          
+        </div>
+      </div>
+      
+  </div>
 
 export default Start
