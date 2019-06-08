@@ -14,8 +14,8 @@ const Login = () => {
             <header>
                 <Header/>
                 <div>
-                    <Button label='Sign in' className='white-button-pink-background' link='google.fuck.you'/>
-                    <Button label='Sign up' className='white-button-pink-background' link='google.fuck.you'/>
+                    <Button label='Sign in' className='white-button-pink-background' link='/login'/>
+                    <Button label='Sign up' className='white-button-pink-background' link='/register'/>
                 </div>
             </header>
             <section>
@@ -24,7 +24,7 @@ const Login = () => {
                     <Input label='4-Digit PIN' icon={() => <Lock />} value={pin} onChange={setPin}/>
                 </div>
                 <div className="sign-in">
-                    <Button label='Sign in' className='grey-button' link='google.fuck.you'/>
+                    <Button label='Sign in' className='grey-button' link='/register'/>
                 </div>
             </section>
         </div>

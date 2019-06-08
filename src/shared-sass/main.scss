@@ -1,3 +1,7 @@
+a {
+  text-decoration: none;
+}
+
 .grey-button {
   background-color: white !important;
   color: grey !important;
@@ -40,4 +44,12 @@ h1.header-text {
   height: 50px;
   widows: 100%;
   background-color: #f67979;
+}
+
+.makeStyles-margin-10 input.MuiInput-input {
+  width: calc(100vw - 5em)!important;
+}
+
+.makeStyles-margin-16, .makeStyles-margin-10 {
+  overflow: hidden;
 }
