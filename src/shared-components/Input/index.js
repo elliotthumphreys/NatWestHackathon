@@ -19,7 +19,11 @@ const CustomInput = ({ label, icon, value, onChange }) => {
                     {icon()}
                 </Grid>
                 <Grid item>
-                    <TextField id="input-with-icon-grid" label={label} value={value} onChange={(event) => onChange(event.target.value)}/>
+                    <TextField
+                        id="input-with-icon-grid"
+                        label={label}
+                        value={value}
+                        onChange={(event) => onChange(event.target.value)} />
                 </Grid>
             </Grid>
         </div>
