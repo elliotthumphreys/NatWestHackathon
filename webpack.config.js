@@ -60,6 +60,12 @@ module.exports = {
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.optimize.ModuleConcatenationPlugin()
+    new webpack.optimize.ModuleConcatenationPlugin(),
+    new webpack.LoaderOptionsPlugin({options: {
+      loaders: [
+        { test: /\.json$/, loader: 'json-loader' },
+        // other loaders 
+      ]
+    }})
   ]
 };
