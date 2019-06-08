@@ -19,6 +19,16 @@ $header-font: "Proza Libre", sans-serif;
   align-items: center;
 }
 
+.generic-btn {
+  border-radius: 999px;
+  border: 3px solid #fff;
+  height: 3rem;
+  margin: 1rem 2rem;
+  background: transparent;
+  color: #fff;
+  font-size: 1.2em;
+}
+
 h1, h2, h3 {
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
