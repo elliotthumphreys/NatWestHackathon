@@ -10,8 +10,8 @@ const Routes = () => {
   return (
     <Provider>
         <Switch>
-          <Route path="/start" component={Start} />
-          <Route path="/recipient-bio" component={RecipientBio} />
+          <Route path="/start/:person" component={Start} />
+          <Route path="/recipient-bio/:person" component={RecipientBio} />
         </Switch>
     </Provider>
   )

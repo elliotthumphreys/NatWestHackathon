@@ -1,21 +1,24 @@
 import React, { useState, useContext } from 'react'
 import { Context } from '../Context'
+import Button from '../../../shared-components/Button'
+import Header from '../../../shared-components/Header'
+import InfoBanner from '../InfoBanner';
 
-const RecipientBio = () => {
+const RecipientBio = ({match:{params}}) => {
     const [ person, setPerson ] = useContext(Context)
+    const currentPerson = person[params.person]
 
-    return <div className='recipient-bio'>
-        <img className='cover-image' src={person.image} />
-        <div className='header-info'>
-            <h3>{person.name}</h3>
-            <h3>{person.age}</h3>
+    return <div>
+        <Header/>
+        <div className='recipient-bio'>
+            <InfoBanner person={currentPerson} />
+            <div className='bio-section'>
+                <p>
+                    {currentPerson.story}
+                </p>
+            </div>
+            <Button label='DONATE' className='grey-button' link={`donate/${currentPerson.id}`}/>
         </div>
-        <div className='bio-section'>
-            <p>
-                {person.story}
-            </p>
-        </div>
-        <button className="donate-btn">DONATE</button>
     </div>
 }
 export default RecipientBio
