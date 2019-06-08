@@ -7,7 +7,7 @@ const H1 = styled.h1`
 `
 
 const Start = () => {
-    return <H1>I'm a styled header</H1>
+    return <H1>Ryan iz gey</H1>
 }
 
 export default Start
