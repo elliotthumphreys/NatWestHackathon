@@ -6,6 +6,9 @@ import Header from '../../../shared-components/Header'
 
 
 const Login = () => {
+    const [username, setUsername] = useState('')
+    const [pin, setPin] = useState('')
+
     return (
         <div className="Login">
             <header>
@@ -17,8 +20,8 @@ const Login = () => {
             </header>
             <section>
                 <div className="inputs">
-                    <Input label='Username' icon={() => <PermIdentity />} />
-                    <Input label='4-Digit PIN' icon={() => <Lock />} />
+                    <Input label='Username' icon={() => <PermIdentity />} value={username} onChange={setUsername}/>
+                    <Input label='4-Digit PIN' icon={() => <Lock />} value={pin} onChange={setPin}/>
                 </div>
                 <div className="sign-in">
                     <Button label='Sign in' className='grey-button' link='google.fuck.you'/>
