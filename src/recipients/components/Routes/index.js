@@ -5,6 +5,7 @@ import Register from "../Register"
 import Admin from "../Admin"
 import AdminConfig from '../AdminConfig'
 import Add from '../Add'
+import Edit from '../Edit'
 import Stats from '../Stats'
 
 const Routes = () => {
@@ -13,7 +14,7 @@ const Routes = () => {
         <Route path="/login" component={Login} />
         <Route path="/register" component={Register} />
         <Route path="/admin/:id/add" component={Add} />
-        <Route path="/admin/:id/edit" component={Add} />
+        <Route path="/admin/:id/edit" component={Edit} />
         <Route path="/admin/:id/stats" component={Stats} />
         <Route path="/admin/:id" component={AdminConfig} />
         <Route path="/admin" component={Admin} />
