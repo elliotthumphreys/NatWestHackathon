@@ -8,13 +8,11 @@ import { Link } from 'react-router-dom'
 
 const Start = ({ match: { params } }) => {
   const [people, setPerson] = useContext(Context)
-  console.log(params.person)
   const currentPerson = people.find(person => person.id === params.person)
-  console.log('Current person', currentPerson)
   return <div>
     <ThinHeader></ThinHeader>
     <div className='background'>
-      <Link to={`/recipient-bio/${currentPerson.id}`}>
+      <Link className='header-info' to={`/recipient-bio/${currentPerson.id}`}>
         <InfoBanner person={currentPerson}/>
       </Link>
       <div className="body-container">

@@ -16,7 +16,7 @@ const Donate = ({match:{params}}) => {
     let [ pot, setPot ] = useState(params.pot.id)
     return <div>
         <ThinHeader/>
-        <Link to={`/recipient-bio/${currentPerson.id}`}>
+        <Link className='header-info' to={`/recipient-bio/${currentPerson.id}`}>
           <InfoBanner person={currentPerson}/>
         </Link>
         <NativeSelect defaultValue={params.pot} onChange={(event) => setPot(event.target.value)}>
