@@ -17,6 +17,18 @@
                 "name": "johns suit",
                 "amount": 10.0,
                 "goal": 50.0
+            },
+            {
+                "id": "bvd",
+                "name": "johns dog",
+                "amount": 20.0,
+                "goal": 50.0
+            },
+            {
+                "id": "skd",
+                "name": "johns car",
+                "amount": 29.0,
+                "goal": 50.0
             }
         ]
     },
