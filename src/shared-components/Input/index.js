@@ -9,7 +9,7 @@ const useStyles = makeStyles(theme => ({
     },
 }))
 
-const CustomInput = ({ label, icon, value, onChange }) => {
+const CustomInput = ({ label, icon, value, onChange, type = 'text' }) => {
     const classes = useStyles();
 
     return (
@@ -23,6 +23,7 @@ const CustomInput = ({ label, icon, value, onChange }) => {
                         id="input-with-icon-grid"
                         label={label}
                         value={value}
+                        type={type}
                         onChange={(event) => onChange(event.target.value)} />
                 </Grid>
             </Grid>

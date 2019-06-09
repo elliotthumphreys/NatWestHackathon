@@ -7,20 +7,22 @@ import { ThinHeader } from '../../../shared-components/Header';
 import { Link } from 'react-router-dom'
 
 const Start = ({ match: { params } }) => {
-  const [person, setPerson] = useContext(Context)
-  const currentPerson = person[params.person]
+  const [people, setPerson] = useContext(Context)
+  console.log(params.person)
+  const currentPerson = people.find(person => person.id === params.person)
+  console.log('Current person', currentPerson)
   return <div>
     <ThinHeader></ThinHeader>
     <div className='background'>
-      <Link to={`../recipient-bio/${currentPerson.id}`}>
-        <InfoBanner person={currentPerson} className='info-banner' />
+      <Link to={`/recipient-bio/${currentPerson.id}`}>
+        <InfoBanner person={currentPerson}/>
       </Link>
       <div className="body-container">
         <p className="donate-msg">Donate to a category</p>
         <div className="pot-container">
           {
             currentPerson.pots.map((pot, index) =>
-              <Button label={pot.name} className="grey-button" />
+              <Button label={pot.name} className="grey-button" link={`/donate/${currentPerson.id}/${pot.id}`}/>
             )
           }
         </div>

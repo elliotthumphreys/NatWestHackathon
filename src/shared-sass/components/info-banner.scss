@@ -1,5 +1,4 @@
 .info-banner {
-    height: 40%;
     width: 100%;
     display: flex;
     align-items: center;
@@ -9,10 +8,5 @@
         border: 3px solid #ccc;
         height: 10rem;
         width: 10rem;
-    }
-    .header-info {
-        display: flex;
-        justify-content: space-evenly;
-        width: 100%;
     }
 }

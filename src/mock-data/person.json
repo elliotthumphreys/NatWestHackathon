@@ -7,11 +7,13 @@
         "story": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at est non lectus ullamcorper mollis ut ac mauris. Morbi fringilla nulla odio, a bibendum metus sagittis varius. Vestibulum pharetra ex id urna mollis, in cursus odio molestie. Vestibulum a faucibus metus. Praesent ultrices nunc ac tortor hendrerit, a vulputate orci euismod. Integer sit amet justo et lectus porttitor lacinia. In lectus odio, scelerisque quis fringilla eu, dapibus et ante. Duis rutrum vulputate euismod. Aliquam vestibulum est lacus, eu maximus metus auctor non. Sed aliquam velit at velit ultrices, sed varius purus vestibulum. Sed id gravida enim, convallis egestas velit. Suspendisse potenti. Praesent vestibulum dignissim nisl, ac vehicula lorem imperdiet ut. Integer a suscipit risus, blandit lobortis leo. Fusce ut molestie leo. Vivamus cursus luctus volutpat. Curabitur eget accumsan nibh. Fusce sit amet tellus viverra, blandit odio et, hendrerit erat. Sed semper vel arcu vel accumsan. Mauris egestas laoreet magna non tempor. Vivamus vehicula consectetur eleifend. Pellentesque elementum pulvinar leo ac tempor. Integer quis imperdiet nisi, vel aliquet lorem. Nunc vitae justo non dui consectetur vulputate ac id augue. Nullam venenatis sed lacus nec semper. Morbi in dictum neque. Donec pretium ornare nibh, nec rutrum ipsum imperdiet at. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum id sapien purus.",
         "pots": [
             {
+                "id": "abc",
                 "name": "johns soup",
                 "amount": 0.00,
                 "goal": 4.20
             },
             {
+                "id": "cba",
                 "name": "johns suit",
                 "amount": 10.0,
                 "goal": 50.0
@@ -26,6 +28,7 @@
         "story": "But they're very easily killed. Clouds are delicate. I spend a lot of time walking around in the woods and talking to trees, and squirrels, and little rabbits and stuff. These things happen automatically. All you have to do is just let them happen.",
         "pots": [
             {
+                "id": "def",
                 "name": "paint materials",
                 "amount": 1.50,
                 "goal": 20
