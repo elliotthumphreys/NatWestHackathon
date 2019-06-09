@@ -9,7 +9,7 @@ const RecipientBio = ({match:{params}}) => {
     const [ people, setPerson ] = useContext(Context)
     const currentPerson = people.find(person => person.id === params.person)
 
-    return <div>
+    return <div className='bio-container'>
         <ThinHeader/>
         <div className='recipient-bio'>
             <Link to={`/recipient-bio/${currentPerson.id}`}>

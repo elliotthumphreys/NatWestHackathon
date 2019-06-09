@@ -5,7 +5,6 @@
 .background {
   display: flex;
   flex-flow: column wrap;
-  height: 100vh;
   .body-container {
     flex-grow: 1;
     padding: 0 1rem;
@@ -13,6 +12,7 @@
     width: 100%;
   }
   .header-info{
+    padding: 2rem 0;
     flex-grow: 1;
   }
 }
@@ -27,4 +27,9 @@
   flex-flow: column wrap;
   justify-content: center;
   align-items: space-around;
+}
+
+.donate-msg {
+  text-align: center;
+  padding: 1rem;
 }
