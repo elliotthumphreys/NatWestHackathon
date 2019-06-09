@@ -31,7 +31,8 @@ const Donate = ({match:{params}}) => {
         <Slider
           value={amount}
           aria-labelledby="label"
-          onChange={(event, value) => setAmount(Number(value).toFixed(2))}
+          onChange={(event, value) => setAmount(value)}
+          step={1}
           min={1} max={100}
         />
         <Input type='number' label='Amount (GBP) £' icon={() => {}} value={amount} onChange={setAmount}/>

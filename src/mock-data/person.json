@@ -16,7 +16,8 @@
                 "id": "cba",
                 "name": "johns suit",
                 "amount": 10.0,
-                "goal": 50.0
+                "goal": 50.0,
+                "message": "I'm saving up for a suit so I can apply for my dream job of a software developer. Thank you for your kindness 🙂"
             }
         ]
     },
