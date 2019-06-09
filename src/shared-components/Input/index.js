@@ -7,6 +7,9 @@ const useStyles = makeStyles(theme => ({
     margin: {
         margin: theme.spacing(1),
     },
+    grid: {
+        margin: theme.spacing(20)
+    }
 }))
 
 const CustomInput = ({ label, icon, value, onChange, type = 'text' }) => {
@@ -14,17 +17,19 @@ const CustomInput = ({ label, icon, value, onChange, type = 'text' }) => {
 
     return (
         <div className={classes.margin}>
-            <Grid container spacing={1} alignItems="flex-end">
-                <Grid item>
+            <Grid container spacing={1} alignItems="flex-end" item xs={12}>
+                <Grid item  xs={12}>
                     {icon()}
                 </Grid>
-                <Grid item>
+                <Grid item  xs={12}>
                     <TextField
                         id="input-with-icon-grid"
                         label={label}
                         value={value}
                         type={type}
-                        onChange={(event) => onChange(event.target.value)} />
+                        onChange={(event) => onChange(event.target.value)}
+                        fullWidth
+                    />
                 </Grid>
             </Grid>
         </div>
