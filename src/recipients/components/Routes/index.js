@@ -7,8 +7,6 @@ import AdminConfig from '../AdminConfig'
 import Add from '../Add'
 import Stats from '../Stats'
 
-import "../../sass/main.scss"
-
 const Routes = () => {
   return (
       <Switch>

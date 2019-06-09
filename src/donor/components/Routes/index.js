@@ -4,8 +4,6 @@ import Start from "../Start"
 import RecipientBio from "../RecipientBio"
 import Donate from "../Donate"
 
-import "../../sass/main.scss"
-
 const Routes = () => {
   return (
     <Switch>

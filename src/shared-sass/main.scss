@@ -1,3 +1,17 @@
+@import './resets/media.scss';
+@import './resets/colour-pallet.scss';
+
+@import './resets/base.scss';
+
+//donors
+@import './components/start.scss';
+@import './components/recipient-bio.scss';
+@import './components/info-banner.scss';
+
+//recipients
+@import './components/login.scss';
+
+
 .button {
   padding: 0.6em 3em 0.6em !important;
   border-radius: 2em !important;
